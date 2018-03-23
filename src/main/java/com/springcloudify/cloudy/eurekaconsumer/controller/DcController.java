@@ -1,4 +1,4 @@
-package com.springcloudify.eurekaconsumer.controller;
+package com.springcloudify.cloudy.eurekaconsumer.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.client.ServiceInstance;

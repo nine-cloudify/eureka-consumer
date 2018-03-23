@@ -1,4 +1,4 @@
-package com.springcloudify.eurekaconsumer.beans;
+package com.springcloudify.cloudy.eurekaconsumer.beans;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
