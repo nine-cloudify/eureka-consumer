@@ -19,6 +19,8 @@ import org.springframework.context.annotation.Configuration;
 @EnableTurbine
 @EnableTurbineStream
 @EnableZuulProxy
+
+@EnableZipkinServer
 @RibbonClient(name = "eurake-consumer", configuration = RibbonConfiguration.class)
 public class EurekaConsumerConfig {
 }
