@@ -19,3 +19,8 @@ eureka:
       defaultZone: http://${eureka.instance.hostname}:${eureka.instance.non-secure-port:11001}/eureka/
     healthcheck:
       enabled: true
+
+turbine:
+  app-config: eureka-consumer-hystrix
+  cluster-name-expression: "default"
+  combine-host-port: true

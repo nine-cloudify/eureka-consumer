@@ -1,4 +1,4 @@
-package com.springcloudify.cloudy.eurekaconsumer.beans;
+package com.springcloudify.cloudify.eurekaconsumer.beans;
 
 import com.netflix.loadbalancer.IRule;
 import com.netflix.loadbalancer.RandomRule;

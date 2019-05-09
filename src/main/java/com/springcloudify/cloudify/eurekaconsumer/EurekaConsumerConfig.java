@@ -1,8 +1,9 @@
-package com.springcloudify.cloudy.eurekaconsumer;
+package com.springcloudify.cloudify.eurekaconsumer;
 
-import com.springcloudify.cloudy.eurekaconsumer.beans.RibbonConfiguration;
+import com.springcloudify.cloudify.eurekaconsumer.beans.RibbonConfiguration;
 import org.springframework.cloud.netflix.hystrix.dashboard.EnableHystrixDashboard;
 import org.springframework.cloud.netflix.ribbon.RibbonClient;
+import org.springframework.cloud.netflix.turbine.EnableTurbine;
 import org.springframework.cloud.openfeign.EnableFeignClients;
 import org.springframework.context.annotation.Configuration;
 
@@ -15,6 +16,9 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 @EnableFeignClients
 @EnableHystrixDashboard
+@EnableTurbine
+@EnableTurbineStream
+@EnableZuulProxy
 @RibbonClient(name = "eurake-consumer", configuration = RibbonConfiguration.class)
 public class EurekaConsumerConfig {
 }
