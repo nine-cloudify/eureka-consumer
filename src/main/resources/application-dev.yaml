@@ -6,6 +6,16 @@ server:
   port: 31111
 
 eureka:
+  instance:
+    appname: erurake-consumer
+    hostname: localhost
+    non-secure-port: 11001
+    instance-id: erurake-consumer@${eureka.instance.hostname}:${server.port}
+
   client:
+    registerWithEureka: true
+    fetchRegistry: true
     serviceUrl:
-      defaultZone: http://${eureka.instance.hostname}:${eureka.client.serviceUrl.eureka-server-port}/eureka/
+      defaultZone: http://${eureka.instance.hostname}:${eureka.instance.non-secure-port:11001}/eureka/
+    healthcheck:
+      enabled: true
